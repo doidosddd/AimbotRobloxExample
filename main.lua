@@ -31,7 +31,7 @@ function GetClosestPlayer()
 end
 
 RunService.RenderStepped:Connect(function()
-    local target = GetClosestEnemy()
+    local target = GetClosestPlayer()
 
     if target and target.Character and target.Character:FindFirstChild("Head") then
         local targetPos = target.Character.HumanoidRootPart.Position
